@@ -1,0 +1,12 @@
+- name: Home
+  ref: /
+  link: /
+- name: About
+  ref: /about
+  link: /about/
+- name: CV
+  ref: /cv
+  link: /cv/
+- name: Blog
+  ref: /blog
+  link: /blog/
