@@ -1,25 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-UK">
 		<head>
 				<title>{{ page.title}}</title>
 				<!-- link to main stylesheet-->
-				<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+				<link rel="stylesheet" type="text/css" href="/assets/css/main.css" media="all">
 				<script type="text/javascript" id="MathJax-script" async
 					src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 				</script>
+				<meta name="viewport" content="width=device-width, initial-scale=1">
 		</head>
 		<body>
 				{% include navigation.html %}
-				<div class="container">
-                
-                {{ content }}
-
+				<div class="wrapper-post">
+					<article class="post">
+						{{ content }}
+					</article>
 				</div><!-- /.container -->
-				<footer>
-						<ul>
-								<li><a href="mailto:Jingbang.Liu@warwick.ac.uk">email</a></li>
-								<li><a href="https://github.com/JingBang-Liu">github.com/JingBang-Liu</a></li>
-						</ul>
-				</footer>
+
+				{% include footer.html %}				
 		</body>
 </html>

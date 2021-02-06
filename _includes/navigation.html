@@ -1,12 +1,21 @@
-<nav>
-    <ul>
-        {% for item in site.data.navigation %}
-            <li><a href="{{ item.ref }}"
-                {% if page.url == item.link %}
-                    style="color: black;"
-                {% endif %}
-                >{{ item.name }}
-            </a></li>
-        {% endfor %}
-    </ul>
-</nav>
+<header class="site-header" role="banner">
+    <div class="wrapper-header">
+        <a class="site-title" rel="author" href="/"
+        {% if page.url == "/" %}
+            style="color: black;"
+        {% endif %}>
+        Jingbang Liu</a>
+        <nav class="site-nav">
+            <ul>
+                {% for item in site.data.navigation %}
+                    <li><a href="{{ item.ref }}"
+                        {% if page.url == item.link %}
+                            style="color: black;"
+                        {% endif %}
+                        >{{ item.name }}
+                    </a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+</header>

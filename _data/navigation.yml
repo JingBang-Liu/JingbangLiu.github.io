@@ -1,6 +1,3 @@
-- name: Home
-  ref: /
-  link: /
 - name: About
   ref: /about
   link: /about/
