@@ -1,9 +1,9 @@
-- name: About
-  ref: /about
-  link: /about/
 - name: CV
   ref: /cv
   link: /cv/
+- name: Research
+  ref: /research
+  link: /research/
 - name: Blog
   ref: /blog
   link: /blog/
